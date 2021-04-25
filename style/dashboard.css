@@ -1,0 +1,225 @@
+.container {
+    display: flex;
+    background: var(--light-gray);
+}
+aside {
+    background: var(--blue-theme);
+    border-radius: 0 28px 12px 0;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.logo{
+    margin: 1rem auto;
+}
+main {
+    width: 85vw;
+    height: 100vh;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu-link {
+    padding: 0.7rem 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--light-gray);
+    font-size: 1.1rem;
+    padding-left: 20px;
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+.menu-link > img {
+    width: 12%;
+    margin-right: 12px;
+}
+.menu-link-active {
+    border-left: 3px solid #FFF;
+}
+.menu-link:hover {
+    background: var(--light-gray);
+    color: var(--blue-theme);
+}
+.menu-link:hover > img{
+    fill: var(--light-gray);
+}
+main > .container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.row {
+    display: flex;
+}
+.card {
+    width: 420px;
+    min-height: 120px;
+    background: #FFF;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.title-page{
+    font-size: 1.6rem;
+    color: var(--blue-dark);
+    font-weight: bold;
+    margin: 1.4rem 0;
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--blue-dark);
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+/* notifications  */
+
+.btn-notificacao{
+    background: var(--blue-theme);
+    color: var(--light-gray);
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.6rem 1.8rem;
+    border: 2px solid var(--blue-theme);
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 10px 0;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-notificacao:hover {
+    background: var(--light-gray);
+    fill: var(--blue-theme);
+    color: var(--blue-theme);
+}
+
+.btn-notificacao > img {
+    width: 20px;
+    margin-right: 12px;
+}
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+}
+.btn-info {
+    background: var(--blue-theme);
+    color: var(--light-gray);
+}
+.btn-danger {
+    background: var(--danger-theme);
+    color: var(--light-gray);
+}
+.btn-success {
+    background: var(--success-theme);
+    color: var(--light-gray);
+}
+
+/* modal  */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 12px;
+    width: 50%;
+    height: 300px;
+    margin: 2rem auto;
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-notification {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-notification > h1 {
+    font-size: 1.5rem;
+    color: var(--blue-dark);
+    font-weight: bold;
+    margin: 12px 0;
+}
+.input-group  {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.8rem auto;
+}
+
+.input-group  > label {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.input-group  > input {
+    line-height: 1.2rem;
+    height: 2em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-notification > button {
+    width: 30%;
+    background: var(--blue-theme);
+    color: var(--light-gray);
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    border: 2px solid var(--blue-theme);
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 20px auto;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+.form-notification > button:hover {
+    background: var(--light-gray);
+    color: var(--blue-theme);
+}
+
+/* customers  */
+

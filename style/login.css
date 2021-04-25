@@ -1,0 +1,82 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display:  flex;
+}
+.img-container {
+    width: 50%;
+    height: 100%;
+    background: var(--blue-theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-container > h1 {
+    color: var(--light-gray);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.img-container > img {
+    width: 50%;
+}
+.login-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.form-login {
+    width: 80%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+}
+.form-login  > .input-group  {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.8rem auto;
+}
+.form-login  > .input-group  > label {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+.form-login  > .input-group  > input {
+    line-height: 1.2rem;
+    height: 2em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    font-size: 1rem;
+    outline: none;
+}
+.form-login  > .input-group  > input:focus {
+    border-bottom: 3px solid var(--blue-theme);
+}
+.form-login > button {
+    width: 30%;
+    background: var(--blue-theme);
+    color: var(--light-gray);
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    border: 2px solid var(--blue-theme);
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 0 auto;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+.form-login > button:hover {
+    background: var(--light-gray);
+    color: var(--blue-theme);
+}

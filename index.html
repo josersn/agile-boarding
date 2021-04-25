@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBenx Login</title>
+
+    <link rel="icon" href="img/favicon-150x150.png" sizes="32x32" />
+    <link rel="icon" href="img/favicon-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="img/favicon-300x300.png" />
+    <meta name="msapplication-TileImage" content="img/favicon-300x300.png" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <h1>Entregando maneiras diferentes de investimentos.</h1>
+            <img src="img/celular.png" alt="BlueBenx gerando Bitcoin para clientes">
+        </div>
+        <div class="login-container">
+            <img src="img/logo.svg" alt="BlueBenx">
+            <form class="form-login">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="usuario@bluebenx.com" autocomplete="off" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="***********" required>
+                </div>
+                <button class="btn-login" type="submit">
+                    <div class="btn-text">Entrar</div>
+                    <div class="spinner none"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
